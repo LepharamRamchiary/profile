@@ -110,68 +110,84 @@ const Portfolio = () => {
 
   const skills = {
     "Frontend": [
-      { name: "React", level: 90 },
-      { name: "JavaScript", level: 95 },
-      { name: "TypeScript", level: 85 },
-      { name: "HTML/CSS", level: 95 },
-      { name: "Tailwind CSS", level: 90 },
-      { name: "Vue.js", level: 75 }
+      { name: "React", level: 70 },
+      { name: "JavaScript", level: 80 },
+      { name: "TypeScript", level: 50 },
+      { name: "HTML/CSS", level: 80 },
+      { name: "Tailwind CSS", level: 80 },
+      { name: "React Native Expo", level: 50 },
+      { name: "Redux toolkit", level: 70 }
     ],
     "Backend": [
-      { name: "Node.js", level: 90 },
-      { name: "Python", level: 85 },
-      { name: "Django", level: 80 },
-      { name: "Express.js", level: 85 },
-      { name: "REST APIs", level: 90 },
-      { name: "GraphQL", level: 75 }
+      { name: "Node.js", level: 70 },
+      { name: "Python", level: 50 },
+      { name: "Django", level: 50 },
+      { name: "Express.js", level: 70 },
+      { name: "REST APIs", level: 70 },
+      // { name: "GraphQL", level: 75 }
     ],
     "Database": [
-      { name: "MongoDB", level: 85 },
-      { name: "PostgreSQL", level: 80 },
-      { name: "MySQL", level: 85 },
-      { name: "Redis", level: 70 },
-      { name: "Firebase", level: 75 }
+      { name: "MongoDB", level: 70 },
+      { name: "PostgreSQL", level: 30 },
+      { name: "MySQL", level: 50 },
+      { name: "Cloudinary", level: 50 },
+      { name: "Firebase", level: 50 }
     ],
     "Tools & Others": [
       { name: "Git", level: 90 },
-      { name: "Docker", level: 75 },
-      { name: "AWS", level: 70 },
-      { name: "Linux", level: 80 },
-      { name: "Webpack", level: 75 },
-      { name: "Jest", level: 80 }
+      { name: "AWS", level: 20 },
+      { name: "Linux", level: 30 },
     ]
   };
 
   const projects = {
     "React Projects": [
       {
-        title: "E-commerce Dashboard",
-        description: "A comprehensive admin dashboard for managing online stores with real-time analytics, inventory management, and order tracking.",
-        technologies: ["React", "Redux", "Chart.js", "Tailwind CSS"],
-        github: "#",
-        live: "#",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop"
+        title: "Disney+ clone",
+        description: "Developing a Disney Plus clone frontend using React, Firebase, and styled-components. Create a user-friendly interface replicating Disney Plus features.",
+        technologies: ["React", "Firebase", "CSS", "React Router", "JavaScript"],
+        github: "https://github.com/LepharamRamchiary/disney_clone",
+        live: "https://disneyplus-clone-ce3ad.web.app",
+        image: "https://my-new-portfolio-ebon-six.vercel.app/static/media/project1.c577bd66e87daef2e071.avif"
       },
       {
-        title: "Task Management App",
-        description: "A collaborative task management application with drag-and-drop functionality, team collaboration, and progress tracking.",
-        technologies: ["React", "Context API", "React Beautiful DnD", "Firebase"],
-        github: "#",
-        live: "#",
-        image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop"
+        title: "ExploreEcho",
+        description: "Explore a beautiful destination through a simple website featuring attractions, culture, cuisine, travel tips, images, and a contact form for inquiries.",
+        technologies: ["React", "CSS", "JavaScript", "React Router", "Vercel"],
+        github: "https://github.com/LepharamRamchiary/ExploreEcho",
+        live: "https://explore-echo-rust.vercel.app",
+        image: "https://my-new-portfolio-ebon-six.vercel.app/static/media/echo.7df6f94ac5f564d53473.avif"
       },
       {
-        title: "Weather Forecast App",
-        description: "A responsive weather application with location-based forecasts, interactive maps, and detailed weather analytics.",
-        technologies: ["React", "OpenWeather API", "Leaflet Maps", "CSS Modules"],
-        github: "#",
-        live: "#",
-        image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=250&fit=crop"
+        title: "Youtube",
+        description: "This application replicates some of the core features of YouTube, allowing users to view, search for, and watch videos. It utilizes the YouTube Data API provided by Rapid API to fetch video data and display it in a user-friendly interface.",
+        technologies: ["React", "Rapid API", "Tailwind CSS", "Context API", "Netlify"],
+        github: "https://github.com/LepharamRamchiary/Youtube_Clone",
+        live: "https://incredible-naiad-ec220e.netlify.app",
+        image: "https://my-new-portfolio-ebon-six.vercel.app/static/media/youtub.6980d2765fff74d7c8fd.avif"
       }
+    ],
+    "AI Agent": [
+      {
+        title: "Healthcare Assistant",
+        description: "This web application acts as a smart and empathetic healthcare assistant powered by Google’s Gemini AI. It offers general health information, wellness tips, and guidance on common symptoms—while ensuring it doesn't replace professional medical advice.",
+        technologies: ["LLM(Gemini API)", "Python", "Flask", "CSS", "HTML", "JavaScript", "Vercel"],
+        github: "https://github.com/LepharamRamchiary/healthcare_assistant",
+        live: "https://healthcare-assistant-three.vercel.app",
+        image: "data:image/jpeg;base64,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"
+      },
+      {
+        title: "CodeConversion",
+        description: "CodeConversion is an AI-powered web application that allows developers to convert code between multiple programming languages and run code instantly for select languages.",
+        technologies: ["LLM(Gemini API)", "Python", "Django", "CSS", "HTML", "JavaScript", "Render"],
+        github: "https://github.com/LepharamRamchiary/code-conversion-ai-agent",
+        live: "https://code-conversion-ai-agent.onrender.com",
+        image: "data:image/png;base64,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"
+      },
     ],
     "Django Projects": [
       {
-        title: "Blog Management System",
+        title: "Youtube ",
         description: "A full-featured blogging platform with user authentication, rich text editor, comment system, and SEO optimization.",
         technologies: ["Django", "PostgreSQL", "Bootstrap", "CKEditor"],
         github: "#",
@@ -248,11 +264,11 @@ const Portfolio = () => {
           ))}
         </div>
         <div className="flex space-x-4">
-          <a href={project.github} className="flex items-center text-gray-700 hover:text-blue-600 transition-all duration-300 hover:scale-105">
+          <a target='_blank' href={project.github} className="flex items-center text-gray-700 hover:text-blue-600 transition-all duration-300 hover:scale-105">
             <Github size={18} className="mr-1" />
             Code
           </a>
-          <a href={project.live} className="flex items-center text-gray-700 hover:text-blue-600 transition-all duration-300 hover:scale-105">
+          <a target='_blank' href={project.live} className="flex items-center text-gray-700 hover:text-blue-600 transition-all duration-300 hover:scale-105">
             <ExternalLink size={18} className="mr-1" />
             Live Demo
           </a>
@@ -475,7 +491,7 @@ const Portfolio = () => {
             <div className={`${isVisible.about ? 'animate-slideInLeft' : 'opacity-0'}`}>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Passionate Problem Solver</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                I'm John Anderson, a dedicated full-stack developer with a passion for creating innovative web solutions. 
+                I'm Lepharam Ramchiary, a dedicated full-stack developer with a passion for creating innovative web solutions. 
                 With expertise in modern JavaScript frameworks, Python backend development, and database management, 
                 I bring ideas to life through clean, efficient code.
               </p>
@@ -489,7 +505,7 @@ const Portfolio = () => {
                   <div className="text-gray-700">Projects Completed</div>
                 </div>
                 <div className="text-center p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors transform hover:scale-105 duration-300">
-                  <div className="text-3xl font-bold text-purple-600 mb-2">3+</div>
+                  <div className="text-3xl font-bold text-purple-600 mb-2">0+</div>
                   <div className="text-gray-700">Years Experience</div>
                 </div>
               </div>
