@@ -48,7 +48,7 @@ const Portfolio = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [isVisible, setIsVisible] = useState({});
   const [typedText, setTypedText] = useState('');
-  const fullText = "John Anderson";
+  const fullText = "Lepharam Ramchiary";
   
   // Typing animation effect
   useEffect(() => {
@@ -396,7 +396,7 @@ const Portfolio = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
-              John Anderson
+              My Profile
             </div>
             <div className="hidden md:flex space-x-8">
               {['home', 'about', 'skills', 'projects', 'contact'].map((item, index) => (
@@ -434,7 +434,7 @@ const Portfolio = () => {
               </h2>
               <h3 className="text-3xl md:text-5xl font-bold mb-6">
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  Full Stack Developer
+                  Software Engineer 
                 </span>
               </h3>
             </div>
@@ -613,21 +613,21 @@ const Portfolio = () => {
                     Whether you have a project in mind or just want to chat about technology, feel free to reach out.
                   </p>
                   <div className="space-y-4">
-                    <a href="mailto:john.anderson@example.com" className="flex items-center text-gray-700 hover:text-blue-600 transition-all duration-300 hover:scale-105 transform">
+                    <a target='_blank' href="mailto:lepharamchiary@gmail.com" className="flex items-center text-gray-700 hover:text-blue-600 transition-all duration-300 hover:scale-105 transform">
                       <Mail size={24} className="mr-4 text-blue-600" />
-                      <span className="text-lg">john.anderson@example.com</span>
+                      <span className="text-lg">lepharamchiary@gmail.com</span>
                     </a>
-                    <a href="https://github.com/johnanderson" className="flex items-center text-gray-700 hover:text-blue-600 transition-all duration-300 hover:scale-105 transform">
+                    <a target='_blank' href="https://github.com/LepharamRamchiary" className="flex items-center text-gray-700 hover:text-blue-600 transition-all duration-300 hover:scale-105 transform">
                       <Github size={24} className="mr-4 text-blue-600" />
-                      <span className="text-lg">github.com/johnanderson</span>
+                      <span className="text-lg">github.com/LepharamRamchiary</span>
                     </a>
-                    <a href="https://linkedin.com/in/johnanderson" className="flex items-center text-gray-700 hover:text-blue-600 transition-all duration-300 hover:scale-105 transform">
+                    <a target='_blank' href="https://www.linkedin.com/in/lepharam-ramchiary-576282215" className="flex items-center text-gray-700 hover:text-blue-600 transition-all duration-300 hover:scale-105 transform">
                       <Linkedin size={24} className="mr-4 text-blue-600" />
-                      <span className="text-lg">linkedin.com/in/johnanderson</span>
+                      <span className="text-lg">linkedin.com/in/lepharam-ramchiary</span>
                     </a>
                   </div>
                 </div>
-                <div className={`${isVisible.contact ? 'animate-slideInRight' : 'opacity-0'}`} style={{ animationDelay: '500ms' }}>
+                {/* <div className={`${isVisible.contact ? 'animate-slideInRight' : 'opacity-0'}`} style={{ animationDelay: '500ms' }}>
                   <div className="space-y-6">
                     <div>
                       <div className="block text-gray-700 font-medium mb-2">Name</div>
@@ -659,7 +659,7 @@ const Portfolio = () => {
                       Send Message
                     </button>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -672,24 +672,24 @@ const Portfolio = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4 hover:scale-105 transition-transform duration-300">
-              John Anderson
+              Lepharam Ramchiary
             </div>
             <p className="text-gray-400 mb-4">
               Crafting digital experiences with passion and precision.
             </p>
             <div className="flex justify-center space-x-6 mb-6">
-              <a href="https://github.com/johnanderson" className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-110 transform">
+              <a target='_blank' href="https://github.com/LepharamRamchiary" className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-110 transform">
                 <Github size={24} />
               </a>
-              <a href="https://linkedin.com/in/johnanderson" className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-110 transform">
+              <a target='_blank' href="https://www.linkedin.com/in/lepharam-ramchiary-576282215" className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-110 transform">
                 <Linkedin size={24} />
               </a>
-              <a href="mailto:john.anderson@example.com" className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-110 transform">
+              <a target='_blank' href="mailto:lepharamchiary@gmail.com" className="text-gray-400 hover:text-white transition-all duration-300 hover:scale-110 transform">
                 <Mail size={24} />
               </a>
             </div>
             <div className="mt-8 pt-8 border-t border-gray-800 text-gray-400 text-sm">
-              © 2025 John Anderson. Built with React & Tailwind CSS.
+               © {new Date().getFullYear()} Lepharam Ramchiary
             </div>
           </div>
         </div>
