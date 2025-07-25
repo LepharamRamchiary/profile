@@ -137,6 +137,8 @@ const Portfolio = () => {
       { name: "Git", level: 90 },
       { name: "AWS", level: 20 },
       { name: "Linux", level: 30 },
+      { name: "Vercel", level: 70 },
+      { name: "Render", level: 70 },
     ]
   };
 
@@ -197,29 +199,21 @@ const Portfolio = () => {
     ],
     "MERN Stack Projects": [
       {
-        title: "Social Media Platform",
-        description: "A full-stack social media application with real-time messaging, post sharing, friend connections, and media uploads.",
-        technologies: ["MongoDB", "Express.js", "React", "Node.js", "Socket.io"],
-        github: "#",
-        live: "#",
-        image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=250&fit=crop"
+        title: "Developer's Blog",
+        description: "Developer's Blog is a comprehensive blogging platform designed specifically for developers to share their knowledge, experiences, and insights. The application features two distinct panels: one for users and another for administrators.",
+        technologies: ["MongoDB", "Express.js", "React", "Node.js", "Vite", "Tailwind CSS", "Flowbite", "Render"],
+        github: "https://github.com/LepharamRamchiary/Developer-Hub-Blog",
+        live: "https://developer-hub-blog.onrender.com",
+        image: "https://my-new-portfolio-ebon-six.vercel.app/static/media/dev.a3968eb0a3bc440742f5.png"
       },
       {
-        title: "Expense Tracker",
-        description: "A comprehensive expense tracking application with budget planning, category management, and financial analytics.",
-        technologies: ["MongoDB", "Express.js", "React", "Node.js", "Chart.js"],
-        github: "#",
-        live: "#",
-        image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=250&fit=crop"
+        title: "WhatsApp Clone",
+        description: "Develop a WhatsApp clone frontend using React, Express, and MongoDB without hosting. Create messaging functionalities, user authentication, and real-time updates.",
+        technologies: ["MongoDB", "Express.js", "React", "Node.js"],
+        github: "https://github.com/LepharamRamchiary/Whatsapp-Clone",
+        live: "https://github.com/LepharamRamchiary/Whatsapp-Clone",
+        image: "https://my-new-portfolio-ebon-six.vercel.app/static/media/project2.e33713f360c363feb7b9.avif"
       },
-      {
-        title: "Real Estate Platform",
-        description: "A property listing platform with advanced search filters, virtual tours, agent profiles, and booking system.",
-        technologies: ["MongoDB", "Express.js", "React", "Node.js", "Mapbox"],
-        github: "#",
-        live: "#",
-        image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=250&fit=crop"
-      }
     ]
   };
 
@@ -440,7 +434,7 @@ const Portfolio = () => {
             </div>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed animate-slideInUp" style={{ animationDelay: '1s' }}>
               Crafting digital experiences with modern web technologies. 
-              Specialized in React, Django, and MERN stack development.
+              Specialized in React, Django, NodeJS, and MERN stack development.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-slideInUp" style={{ animationDelay: '1.5s' }}>
               <button 
@@ -485,7 +479,7 @@ const Portfolio = () => {
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors transform hover:scale-105 duration-300">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">50+</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">7+</div>
                   <div className="text-gray-700">Projects Completed</div>
                 </div>
                 <div className="text-center p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors transform hover:scale-105 duration-300">
