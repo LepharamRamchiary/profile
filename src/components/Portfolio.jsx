@@ -140,6 +140,7 @@ const Portfolio = () => {
       { name: "Express.js", level: 70 },
       { name: "REST APIs", level: 70 },
       { name: "Swagger(API Docs)", level: 60 },
+      { name: "Postman(API testing)", level: 70 },
     ],
     Database: [
       { name: "MongoDB", level: 70 },
