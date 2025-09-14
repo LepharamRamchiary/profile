@@ -139,7 +139,7 @@ const Portfolio = () => {
       { name: "Django", level: 50 },
       { name: "Express.js", level: 70 },
       { name: "REST APIs", level: 70 },
-      // { name: "GraphQL", level: 75 }
+      { name: "Swagger(API Docs)", level: 60 },
     ],
     Database: [
       { name: "MongoDB", level: 70 },
@@ -148,9 +148,10 @@ const Portfolio = () => {
       { name: "Cloudinary", level: 50 },
       { name: "Firebase", level: 50 },
     ],
-    "Tools & Others": [
-      { name: "Git", level: 90 },
-      { name: "AWS", level: 20 },
+    DevOps: [
+      { name: "GitHub (GitHub Action)", level: 90 },
+      { name: "CI/CD Pipeline", level: 50 },
+      { name: "AWS (EC2)", level: 50 },
       { name: "Linux", level: 30 },
       { name: "Vercel", level: 70 },
       { name: "Render", level: 70 },
@@ -288,6 +289,25 @@ const Portfolio = () => {
         live: "https://github.com/LepharamRamchiary/Whatsapp-Clone",
         image:
           "https://my-new-portfolio-ebon-six.vercel.app/static/media/project2.e33713f360c363feb7b9.avif",
+      },
+    ],
+
+    "DevOps Projects": [
+      {
+        title: "Test Project",
+        description:
+          "This project sets up a CI/CD pipeline using GitHub Actions to deploy a Node.js application on an AWS EC2 server. It runs tests and builds on every push, then automatically deploys the latest code with PM2 for process management.",
+        technologies: [
+          "GitHub Actions",
+          "Node.js",
+          "JavaScript",
+          "AWS(EC2)",
+          "PM2",
+        ],
+        github: "https://github.com/LepharamRamchiary/only-backend-cicd",
+        live: "http://ec2-16-171-30-120.eu-north-1.compute.amazonaws.com/api-docs",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAABUoTg0hRIRysVXsNZg21ojLCOSsljUElA&s",
       },
     ],
   };
@@ -679,40 +699,6 @@ const Portfolio = () => {
           </div>
         </div>
       </section>
-      {/* Skills Section */}
-      {/* <section id="skills" className="py-20 bg-gray-50 relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-10 right-10 w-64 h-64 bg-blue-400/10 rounded-full mix-blend-multiply filter blur-xl animate-blob" />
-          <div className="absolute bottom-10 left-10 w-64 h-64 bg-purple-400/10 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000" />
-        </div>
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className={`text-center mb-16 ${isVisible.skills ? 'animate-slideInUp' : 'opacity-0'}`}>
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Technical Skills</h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto mb-6"></div>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Here are the technologies and tools I work with to bring your ideas to life
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {Object.entries(skills).map(([category, skillList], categoryIndex) => (
-              <div 
-                key={category} 
-                className={`bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 ${
-                  isVisible.skills ? 'animate-slideInUp' : 'opacity-0'
-                }`}
-                style={{ animationDelay: `${categoryIndex * 200}ms` }}
-              >
-                <h3 className="text-xl font-bold text-gray-900 mb-6 text-center">{category}</h3>
-                <div className="space-y-4">
-                  {skillList.map((skill, skillIndex) => (
-                    <SkillBar key={skillIndex} skill={skill.name} level={skill.level} index={skillIndex} />
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
 
       <section
         id="skills"
@@ -764,7 +750,7 @@ const Portfolio = () => {
                       {category === "Database" && (
                         <Database size={20} className="text-white" />
                       )}
-                      {category === "Tools & Others" && (
+                      {category === "DevOps" && (
                         <Code size={20} className="text-white" />
                       )}
                     </div>
@@ -1045,39 +1031,19 @@ const Portfolio = () => {
                     </a>
                   </div>
                 </div>
-                {/* <div className={`${isVisible.contact ? 'animate-slideInRight' : 'opacity-0'}`} style={{ animationDelay: '500ms' }}>
-                  <div className="space-y-6">
-                    <div>
-                      <div className="block text-gray-700 font-medium mb-2">Name</div>
-                      <input 
-                        type="text" 
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all duration-300 hover:border-blue-300"
-                        placeholder="Your Name"
-                      />
-                    </div>
-                    <div>
-                      <div className="block text-gray-700 font-medium mb-2">Email</div>
-                      <input 
-                        type="email" 
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all duration-300 hover:border-blue-300"
-                        placeholder="your@email.com"
-                      />
-                    </div>
-                    <div>
-                      <div className="block text-gray-700 font-medium mb-2">Message</div>
-                      <textarea 
-                        rows="5" 
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all duration-300 resize-none hover:border-blue-300"
-                        placeholder="Tell me about your project..."
-                      ></textarea>
-                    </div>
-                    <button 
-                      className="w-full px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold hover:shadow-lg transform hover:-translate-y-1 hover:scale-105 transition-all duration-300"
-                    >
-                      Send Message
-                    </button>
-                  </div>
-                </div> */}
+
+                <div
+                  className={`flex justify-center items-center ${
+                    isVisible.contact ? "animate-slideInRight" : "opacity-0"
+                  }`}
+                  style={{ animationDelay: "500ms" }}
+                >
+                  <img
+                    src="/gitpro.png"
+                    alt="Lepharam Ramchiary"
+                    className="w-64 h-64 object-cover rounded-full shadow-lg hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
               </div>
             </div>
           </div>
